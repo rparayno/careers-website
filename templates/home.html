@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Roxas Careers</title>
+    <style>
+      h1 {
+        font-size: 40px;
+        font-family: Roboto;
+        font-weight: normal;
+        color: rgb(100,100,100);
+        text-align: center;
+        padding-top: 50px;
+      }
+      p {
+        font: size; 12;
+        text-align: left;
+        text-indent: 100px;
+      }
+      #intro {
+        font-family: 'georgia';
+        font-size:20px;
+        text-align: justify;
+        padding-top: 50px;
+        padding-right: 50px;
+        padding-bottom: 50px;
+        padding-left: 50px;
+      }
+      #footer {
+        position: fixed;
+        left: 0; 
+        bottom: 0;
+        width: 100%;
+        background-color: blue;
+        text-align: center;
+      }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  
+  </head>
+  <body>
+    <h1 >Careers in Roxas!</h1>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-        geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <div id="intro">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa massa ultricies mi quis. Scelerisque in dictum non consectetur a erat nam at lectus. Dis parturient montes nascetur ridiculus mus mauris vitae ultricies leo. Vitae purus faucibus ornare suspendisse sed nisi lacus. Vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa. Sed vulputate odio ut enim blandit volutpat. Egestas sed tempus urna et pharetra pharetra massa massa ultricies. Ornare aenean euismod elementum nisi quis eleifend quam adipiscing vitae. Adipiscing commodo elit at imperdiet dui accumsan. Velit aliquet sagittis id consectetur purus. Nunc mattis enim ut tellus elementum sagittis vitae et. Scelerisque eleifend donec pretium vulputate sapien nec sagittis. Fermentum et sollicitudin ac orci phasellus egestas tellus. Ut aliquam purus sit amet luctus venenatis lectus magna fringilla. Ac felis donec et odio pellentesque diam volutpat commodo. Mattis nunc sed blandit libero volutpat sed cras ornare arcu. Nam libero justo laoreet sit amet cursus. Nulla facilisi nullam vehicula ipsum a arcu cursus vitae.
+
+Lobortis scelerisque fermentum dui faucibus in ornare quam viverra. Risus pretium quam vulputate dignissim suspendisse. Vel fringilla est ullamcorper eget nulla. Odio euismod lacinia at quis risus sed vulputate odio ut. Mattis ullamcorper velit sed ullamcorper morbi. Lacinia quis vel eros donec ac odio tempor. Lectus quam id leo in vitae turpis massa sed elementum. Magna ac placerat vestibulum lectus mauris ultrices eros. Ut tristique et egestas quis ipsum suspendisse ultrices. Dolor sit amet consectetur adipiscing elit pellentesque. Eu sem integer vitae justo eget magna. Sed elementum tempus egestas sed sed. Hac habitasse platea dictumst quisque sagittis. Vestibulum morbi blandit cursus risus. Amet justo donec enim diam vulputate ut.
+    </p>
+    </div>
+    
+      <div>
+        {% for job in jobs %}
+          {% include 'jobitem.html' %}
+        {% endfor %}
+      </div>
+      <div id="footer" class="text-center">
+        <button class="btn btn-primary btn-lg">Contact us</button>
+      </div>
+  </body>
+</html>
