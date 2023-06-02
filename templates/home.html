@@ -12,6 +12,7 @@
         color: rgb(100,100,100);
         text-align: center;
         padding-top: 50px;
+        padding-bottom:50px;
       }
       p {
         font: size; 12;
@@ -40,6 +41,7 @@
   
   </head>
   <body>
+    {% include 'nav.html' %}
     <h1 >Careers in Roxas!</h1>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-        geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <div id="intro">
@@ -48,14 +50,15 @@
 Lobortis scelerisque fermentum dui faucibus in ornare quam viverra. Risus pretium quam vulputate dignissim suspendisse. Vel fringilla est ullamcorper eget nulla. Odio euismod lacinia at quis risus sed vulputate odio ut. Mattis ullamcorper velit sed ullamcorper morbi. Lacinia quis vel eros donec ac odio tempor. Lectus quam id leo in vitae turpis massa sed elementum. Magna ac placerat vestibulum lectus mauris ultrices eros. Ut tristique et egestas quis ipsum suspendisse ultrices. Dolor sit amet consectetur adipiscing elit pellentesque. Eu sem integer vitae justo eget magna. Sed elementum tempus egestas sed sed. Hac habitasse platea dictumst quisque sagittis. Vestibulum morbi blandit cursus risus. Amet justo donec enim diam vulputate ut.
     </p>
     </div>
-    
-      <div>
+    <div>
+      <h1>Open Positions</h1>
+    </div>
+    <div>
         {% for job in jobs %}
           {% include 'jobitem.html' %}
         {% endfor %}
       </div>
-      <div id="footer" class="text-center">
-        <button class="btn btn-primary btn-lg">Contact us</button>
-      </div>
+      
   </body>
+  {% include 'footer.html' %}
 </html>
